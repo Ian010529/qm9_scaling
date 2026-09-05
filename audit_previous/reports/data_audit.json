@@ -1,0 +1,35 @@
+{
+  "counts": {
+    "sdf_records": 133885,
+    "uncharacterized": 3054,
+    "invalid_structure": 1819,
+    "missing_target": 0,
+    "duplicates_removed": 232,
+    "retained": 128780
+  },
+  "units": {
+    "mu": "Debye",
+    "homo": "Hartree",
+    "lumo": "Hartree",
+    "G": "Hartree"
+  },
+  "G_definition": "g298; total molecular Gibbs free energy at 298.15 K, not g298_atom or solvation free energy",
+  "smiles_policy": "RDKit canonical non-isomeric SMILES for all three routes; keep isomeric SMILES for provenance",
+  "duplicate_policy": "Keep smallest original QM9 ID for each canonical non-isomeric SMILES, without consulting targets",
+  "input_information": "2D connectivity only; SDF coordinates are not model inputs",
+  "data_caveat": "This is the RDKit-valid subset of the DeepChem SDF mirror, with additional parsing exclusions. It must not be described as the standard 130831-molecule QM9 subset. Original-SMILES cross-check is pending.",
+  "dataset_sha256": "db503007c33d19e49ed7c518817b13db98782004ebbb10efbcf306151610a7e4",
+  "versions": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "rdkit": "2026.3.6",
+    "xgboost": "3.4.1",
+    "torch": null,
+    "transformers": null,
+    "chemprop": null
+  },
+  "sources": {
+    "qm9.zip": "f11d3f8ecc3097a72656a35c4847767852e6f346bf99a54619a1a3b6389ddc02",
+    "uncharacterized.txt": "3aa5115d540b356de94791d4a74c3bf1ed91c469ecf52a4f5d7cc0506fe02e24"
+  }
+}

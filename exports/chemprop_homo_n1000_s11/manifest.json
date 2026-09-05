@@ -1,0 +1,11 @@
+{
+  "arguments": {
+    "size": 1000,
+    "subset_seed": 11,
+    "target": "homo",
+    "include_test": false,
+    "training_seed": 101
+  },
+  "dataset_sha256": "6d04e39387cbf5a2c2e1f4689476ededb40738c1ba0c4406896e187347367d87",
+  "status": "Input exported; training not executed. Fixed model seed and pilot early-stopping settings are included."
+}

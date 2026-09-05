@@ -1,0 +1,22 @@
+{
+  "parameters": {
+    "radius": 2,
+    "fpSize": 2048,
+    "includeChirality": false
+  },
+  "bitorder": "little",
+  "rows": 128780,
+  "unique_fingerprints": 128234,
+  "duplicate_fingerprint_rows": 546,
+  "dataset_sha256": "db503007c33d19e49ed7c518817b13db98782004ebbb10efbcf306151610a7e4",
+  "features_sha256": "8c6f19dd96505d1fa5dec132bb0b32f914f17437bc59e0ff2d254658bdc13eec",
+  "versions": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "rdkit": "2026.3.6",
+    "xgboost": "3.4.1",
+    "torch": null,
+    "transformers": null,
+    "chemprop": null
+  }
+}

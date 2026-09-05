@@ -1,0 +1,1 @@
+chemprop train --data-path exports/chemprop_homo_n1000_s11/data.csv --smiles-columns smiles --target-columns homo --splits-column split --task-type regression --metrics mae rmse --epochs 100 --patience 20 --pytorch-seed 101 --output-dir runs/dmpnn_homo_n1000_s11

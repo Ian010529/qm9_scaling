@@ -85,10 +85,20 @@ Python 3.12；基础依赖已在本次环境实际验证。
 python -m pip install -r requirements-base.txt
 ```
 
-完整本地项目包含处理结果，不必重新运行下载和生成。GitHub 仓库仅保留代码、配置、文档、
-核验报告及来源/特征/划分元数据；原始与处理数据、特征数组、划分文件、模型、导出文件和
-`audit_previous/` 由 `.gitignore` 排除，克隆后需重建。历史核验报告描述的是本次本地实验，
-不代表新环境已经运行验证；旧版对照还需要另行提供 `audit_previous/` 原始归档。
+GitHub 仓库包含上表列出的原始与处理数据、固定划分、三种特征、试运行模型、导出文件及
+`audit_previous/` 对照归档，不必重新运行下载和生成。大型特征数组通过 Git LFS 保存；
+请先安装 Git LFS，再克隆并拉取完整文件：
+
+```bash
+git lfs install
+git clone https://github.com/Ian010529/qm9_scaling.git
+cd qm9_scaling
+git lfs pull
+```
+
+已有克隆可在仓库目录执行 `git pull` 和 `git lfs pull`。不要将 LFS 指针文件当作数组使用。
+`.gitignore` 仅排除环境、缓存、凭据和临时文件。历史核验报告描述的是本次本地实验，
+不代表新环境已经运行验证。
 若需从零重建，请在没有旧输出的新目录中运行：
 
 ```bash

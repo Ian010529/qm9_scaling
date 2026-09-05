@@ -29,25 +29,9 @@ dist/
 *.part
 *.swp
 
-# Downloaded and processed datasets; retain source hashes
-/data/raw/*
-!/data/raw/manifest.json
-/data/processed/
-
-# Reproducible feature arrays and interrupted array writes; retain metadata
-/features/**/*.npy
-/features/**/*.npz
+# Interrupted feature writes and transient extraction progress
 /features/**/.*.npy.*
 /features/molformer_progress.json
-
-# Generated splits; retain the experiment manifest
-/splits/*
-!/splits/manifest.json
-
-# Training artifacts, generated exports and superseded audit inputs
-/runs/
-/exports/
-/audit_previous/
 
 # Local model download caches
 .cache/
