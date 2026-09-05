@@ -1,0 +1,42 @@
+{
+  "dataset_sha256": "6d04e39387cbf5a2c2e1f4689476ededb40738c1ba0c4406896e187347367d87",
+  "split_seed": 20260905,
+  "subset_seeds": [
+    11,
+    22,
+    33,
+    44,
+    55
+  ],
+  "training_seeds": [
+    101,
+    102,
+    103,
+    104,
+    105
+  ],
+  "train_sizes": [
+    500,
+    1000,
+    2000,
+    5000,
+    10000,
+    20000,
+    50000,
+    100000
+  ],
+  "counts": {
+    "test": 13074,
+    "val": 13075,
+    "pool": 104595
+  },
+  "files_sha256": {
+    "fixed.npz": "f5ee0bba4631b475bf4262923a652e3545f0d2b1a287592cf11971739ba7bfa1",
+    "sequence_11.npy": "6d791d1ced62d3b56220ffcce50e98a17afb8724447ccd407068dafca9fdfebb",
+    "sequence_22.npy": "f8fbc507c24f5ef380f01111fc005e290fa44e3d5e1b7d9c77e5aaddd5b7bc39",
+    "sequence_33.npy": "597ab7c0d9d5ba3aa0f13c911b6031d85a18a012126f2599fbe0ef1e46884f84",
+    "sequence_44.npy": "7c7dabb76520e26c19e016540e29453f8c83e0da5a838bb50d1aa744217c31d2",
+    "sequence_55.npy": "e12b58ec0f454bf6d5a1fcbd48c66ce7a448591b70bc0cbfcb51f6fb4c70f63c"
+  },
+  "convention": "IDs, not row offsets. First N IDs of each sequence are the N-sample training set."
+}

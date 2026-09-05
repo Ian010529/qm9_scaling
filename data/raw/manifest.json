@@ -1,0 +1,18 @@
+{
+  "qm9.zip": {
+    "url": "https://deepchemdata.s3-us-west-1.amazonaws.com/datasets/molnet_publish/qm9.zip",
+    "bytes": 44827467,
+    "sha256": "f11d3f8ecc3097a72656a35c4847767852e6f346bf99a54619a1a3b6389ddc02"
+  },
+  "uncharacterized.txt": {
+    "url": "https://ndownloader.figshare.com/files/3195404",
+    "bytes": 486752,
+    "sha256": "3aa5115d540b356de94791d4a74c3bf1ed91c469ecf52a4f5d7cc0506fe02e24"
+  },
+  "qm9_smiles.csv": {
+    "url": "https://deepchemdata.s3-us-west-1.amazonaws.com/datasets/qm9.csv",
+    "bytes": 29856825,
+    "sha256": "3e668f8c34e4bc392a90d417a50a5eed3b64b842a817a633024bdc054c68ccb4",
+    "acquisition": "User uploaded qm9.csv; included copy is byte-identical"
+  }
+}

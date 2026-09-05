@@ -1,0 +1,50 @@
+{
+  "rows": 130744,
+  "dataset_sha256": "6d04e39387cbf5a2c2e1f4689476ededb40738c1ba0c4406896e187347367d87",
+  "id_alignment": "all three input routes exactly match the processed data order",
+  "split_shapes": {
+    "train": {
+      "morgan": [
+        1000,
+        2048
+      ],
+      "molformer": [
+        1000,
+        768
+      ],
+      "target": [
+        1000
+      ]
+    },
+    "val": {
+      "morgan": [
+        13075,
+        2048
+      ],
+      "molformer": [
+        13075,
+        768
+      ],
+      "target": [
+        13075
+      ]
+    },
+    "test": {
+      "morgan": [
+        13074,
+        2048
+      ],
+      "molformer": [
+        13074,
+        768
+      ],
+      "target": [
+        13074
+      ]
+    }
+  },
+  "test_evaluation_performed": false,
+  "molformer_file_sha256_checked": true,
+  "graph_verification": "features/dmpnn/verification.json",
+  "molformer_verification": "features/molformer.json"
+}

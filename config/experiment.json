@@ -1,0 +1,79 @@
+{
+  "targets": [
+    "mu",
+    "homo",
+    "lumo",
+    "G"
+  ],
+  "units": {
+    "mu": "Debye",
+    "homo": "Hartree",
+    "lumo": "Hartree",
+    "G": "Hartree"
+  },
+  "split_seed": 20260905,
+  "subset_seeds": [
+    11,
+    22,
+    33,
+    44,
+    55
+  ],
+  "training_seeds": [
+    101,
+    102,
+    103,
+    104,
+    105
+  ],
+  "train_fraction": 0.8,
+  "test_fraction": 0.1,
+  "train_sizes": [
+    500,
+    1000,
+    2000,
+    5000,
+    10000,
+    20000,
+    50000,
+    100000
+  ],
+  "smiles_policy": "RDKit canonical non-isomeric SMILES for all three routes; keep isomeric SMILES for provenance",
+  "duplicate_policy": "Keep smallest original QM9 ID for each canonical non-isomeric SMILES, without consulting targets",
+  "morgan": {
+    "radius": 2,
+    "fpSize": 2048,
+    "includeChirality": false
+  },
+  "molformer": {
+    "model_id": "ibm-research/MoLFormer-XL-both-10pct",
+    "revision": "7b12d946c181a37f6012b9dc3b002275de070314",
+    "pooling": "pooler_output",
+    "frozen": true,
+    "dimension": 768,
+    "deterministic_eval": true,
+    "precision": "float32"
+  },
+  "xgboost_pilot": {
+    "n_estimators": 2000,
+    "max_depth": 6,
+    "learning_rate": 0.03,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "reg_lambda": 1.0,
+    "tree_method": "hist",
+    "early_stopping_rounds": 100,
+    "eval_metric": "mae",
+    "n_jobs": 4
+  },
+  "scope": "Random split main experiment. Pilot hyperparameters are not a finalized benchmark tuning protocol. Scaffold robustness study is deferred.",
+  "dataset_version": "qm9_reference_smiles_v2",
+  "dmpnn": {
+    "featurizer": "SimpleMoleculeMolGraphFeaturizer",
+    "chemprop_version": "2.2.1",
+    "atom_dimension": 72,
+    "directed_edge_dimension": 14,
+    "graph_cache": "features/dmpnn",
+    "trained": false
+  }
+}

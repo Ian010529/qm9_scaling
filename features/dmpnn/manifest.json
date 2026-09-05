@@ -1,0 +1,46 @@
+{
+  "rows": 130744,
+  "shapes": {
+    "V": [
+      1149965,
+      72
+    ],
+    "E": [
+      2462222,
+      14
+    ],
+    "edge_index": [
+      2,
+      2462222
+    ],
+    "rev_edge_index": [
+      2462222
+    ]
+  },
+  "featurizer": "chemprop.featurizers.SimpleMoleculeMolGraphFeaturizer",
+  "atom_mode": "MultiHotAtomFeaturizer.v2",
+  "extra_features": false,
+  "node_dimension": 72,
+  "edge_dimension": 14,
+  "index_convention": "edge_index and rev_edge_index are LOCAL to each molecule; atom_ptr and edge_ptr slice flattened arrays",
+  "precision": "float32 features; int32 graph indices; int64 offsets",
+  "dataset_sha256": "6d04e39387cbf5a2c2e1f4689476ededb40738c1ba0c4406896e187347367d87",
+  "versions": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "rdkit": "2026.3.6",
+    "xgboost": "3.4.1",
+    "torch": "2.8.0+cpu",
+    "transformers": "4.57.6",
+    "chemprop": "2.2.1"
+  },
+  "files_sha256": {
+    "E.npy": "1dd31f4c13f9698db2e35bc32cc6571d3e57440b2b1c86f4088d036a7502e964",
+    "V.npy": "65c5289060d0b555748fc13f75448e85a83cb1d7c1bb15b7ec8f22af1352574f",
+    "atom_ptr.npy": "bfdd5f6adb88f9a45c45c740a8a8380685e808d3c89d91125c703ecc205f413a",
+    "edge_index.npy": "3eaa520ae31ec22f237708550d3d1b99dd5b92cbb58d9770a811ab7e5591687f",
+    "edge_ptr.npy": "1262c8a371a40ab458f92696d76cb7d7b5d55af8d54bc5ba7b6500d4afa5f65f",
+    "mol_id.npy": "00a7c51f0eac32c2df66e8bac46478de52a394b821cb4a42c40639f573da593f",
+    "rev_edge_index.npy": "6dbf66c046f50c36024ae3e45d815e7566ec141d214b20c2057313ec902817eb"
+  }
+}

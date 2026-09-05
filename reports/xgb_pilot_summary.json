@@ -1,0 +1,14 @@
+{
+  "target": "homo",
+  "training_size": 1000,
+  "subset_seed": 11,
+  "training_seed": 101,
+  "validation_n": 13075,
+  "MAE_Hartree": 0.01014170224380064,
+  "RMSE_Hartree": 0.013896536907576622,
+  "R2": 0.6141833676829105,
+  "training_mean_baseline_MAE_Hartree": 0.016438767510516254,
+  "MAE_reduction_vs_training_mean": 0.383061884821185,
+  "test_evaluated": false,
+  "role": "single pilot; untuned hyperparameters, validation-selected early stopping"
+}

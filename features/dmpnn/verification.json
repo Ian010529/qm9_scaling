@@ -1,0 +1,10 @@
+{
+  "all_graphs_equal_to_official_featurizer": true,
+  "graphs_checked": 130744,
+  "zero_bond_graphs": 3,
+  "official_batch_and_message_passing_forward": "passed; randomly initialized diagnostic only, not trained molecular embeddings",
+  "forward_shape": [
+    15,
+    32
+  ]
+}

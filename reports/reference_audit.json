@@ -1,0 +1,37 @@
+{
+  "reference_rows": 133885,
+  "reference_sha256": "3e668f8c34e4bc392a90d417a50a5eed3b64b842a817a633024bdc054c68ccb4",
+  "reference_ids_equal_raw_ids": true,
+  "target_checks": {
+    "mu": {
+      "changed": 0,
+      "max_absolute_difference": 0.0
+    },
+    "homo": {
+      "changed": 0,
+      "max_absolute_difference": 0.0
+    },
+    "lumo": {
+      "changed": 0,
+      "max_absolute_difference": 0.0
+    },
+    "g298": {
+      "changed": 0,
+      "max_absolute_difference": 0.0
+    }
+  },
+  "previous_retained": 128780,
+  "previous_invalid": 1819,
+  "previous_invalid_parseable_now": 1819,
+  "previous_invalid_retained_now": 1819,
+  "previous_retained_same_structure": 99790,
+  "previous_retained_changed_structure": 28990,
+  "previous_retained_changed_fingerprint": 27910,
+  "new_nonexcluded_parse_failures": 0,
+  "new_duplicates": 87,
+  "new_retained": 130744,
+  "added_ids": 1964,
+  "removed_ids": 0,
+  "changed_structure_ids_retained_now": 28990,
+  "comparison_scope": "Canonical non-isomeric SMILES and Morgan(radius=2, bits=2048); stereochemical differences are outside this protocol"
+}

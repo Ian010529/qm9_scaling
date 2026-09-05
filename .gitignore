@@ -1,0 +1,53 @@
+# Python environments, bytecode and tooling caches
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+build/
+dist/
+.ipynb_checkpoints/
+
+# Local settings and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.idea/
+.vscode/
+.DS_Store
+._*
+*.log
+*.tmp
+*.part
+*.swp
+
+# Downloaded and processed datasets; retain source hashes
+/data/raw/*
+!/data/raw/manifest.json
+/data/processed/
+
+# Reproducible feature arrays and interrupted array writes; retain metadata
+/features/**/*.npy
+/features/**/*.npz
+/features/**/.*.npy.*
+/features/molformer_progress.json
+
+# Generated splits; retain the experiment manifest
+/splits/*
+!/splits/manifest.json
+
+# Training artifacts, generated exports and superseded audit inputs
+/runs/
+/exports/
+/audit_previous/
+
+# Local model download caches
+.cache/
