@@ -1,16 +1,10 @@
-# Scaling law 研究入口
+# Scaling law 实验方案入口
 
-`research/scaling-law-v1` 保留三条原始路线、四个性质及参考SMILES数据版本，增加可执行的前瞻性规模律研究协议。
+本分支只完善实验方案与改动报告，目标仍然是发现、刻画和验证 scaling law。三条原始路线、四个性质、八个训练规模和五次重复保持不变，原有 480 次主实验全部保留。
 
-1. 完整设计：[docs/SCALING_LAW_PROTOCOL.md](docs/SCALING_LAW_PROTOCOL.md)
-2. 执行命令：[docs/RUNBOOK.md](docs/RUNBOOK.md)
-3. 修改与验证报告：[reports/SCALING_LAW_CHANGE_REPORT.md](reports/SCALING_LAW_CHANGE_REPORT.md)
-4. 机器配置：[config/scaling_law_v1.json](config/scaling_law_v1.json)
+- [完整实验方案](docs/SCALING_LAW_EXPERIMENT_PLAN.md)：研究问题、调参、训练、对照、外推验证、统计方法、执行阶段及投稿材料。
+- [方案完善报告](SCALING_LAW_PLAN_CHANGE_REPORT.md)：本次补充、保持不变的内容、工作量和完成状态。
 
-```bash
-python -m scaling.cli plan
-```
+以上完整实验方案是唯一设计入口。主实验、补充对照、调参和条件扩展的数量以该方案第 9 节为准，不把主实验的 480 次写成全部研究成本。
 
-名义完整清单6,439次训练，含调参、原始主曲线、G残差、容量与机制对照；骨架划分的实际池截断以prepare后的matrix为准。原README中的pilot仍保留作历史记录，不是新协议的正式实验入口。
-
-本分支新增代码和设计，不包含虚构的规模律发现或已完成的正式研究结果。正式机器必须先通过固定依赖、真实LFS资产及官方Chemprop前后向验收。
+本次没有新增可运行训练器或命令，没有运行正式实验。现有运行配置仍为 `config/experiment.json`，描述当前实现及 pilot；新的方案需要在之后的执行阶段落实，不能把设计文档当成已经完成的软件功能。
