@@ -1,0 +1,45 @@
+{
+  "date": "2026-09-07",
+  "base_commit": "fdd0a611e486f25e5c4ccd8c148db9f5a6b782d2",
+  "branch": "research/scaling-law-v1",
+  "kind": "synthetic software validation, not QM9 research results",
+  "pytest": {
+    "passed": 22,
+    "skipped": 1,
+    "skipped_reason": "Chemprop is unavailable; official graph forward/backward test not executed",
+    "output_file": "reports/scaling_test_output.txt"
+  },
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "platform": "Linux-6.18.35-x86_64-with-glibc2.41",
+  "versions": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0",
+    "scikit-learn": "1.8.0",
+    "torch": "2.10.0+cpu",
+    "rdkit": "2025.9.4",
+    "xgboost": "3.1.3",
+    "chemprop": null,
+    "pytest": "9.0.2",
+    "matplotlib": "3.10.8",
+    "threadpoolctl": "3.6.0"
+  },
+  "formal_environment_verified": false,
+  "full_qm9_assets_reverified": false,
+  "formal_training_executed": false,
+  "cuda_verified": false,
+  "nominal_matrix_training_runs": 6439,
+  "source_sha256": {
+    "scaling/data.py": "38d02b69374cf80878953484cb9b038658c7ca15b75fb71f990145af5e584f97",
+    "scaling/train.py": "4a46a3b7246b83fe2f1e3166533affe0fd15f40b4cc01fd886ba16bd73990a47",
+    "scaling/__init__.py": "9cab9b37572de84e3d7a2a32fd34550ec04860b2f65a5d391625eb2bea948164",
+    "scaling/design.py": "2787e1993ed2d7d9497c3409d446b7cd188129fac7e689c0bc2c21574599c767",
+    "scaling/io.py": "66689954478acda6790e6a6dcf5e2b117a53da4714d0e414080501b8a4cad1d3",
+    "scaling/laws.py": "ce95b99bd4fdbb2fe6a784da62f6de54943a60f3e517bda1703e5bbd6c2c3c10",
+    "scaling/report.py": "4413069222bf4c47e9d7306ae9e1783070e687b4992a43b88261d96c758e09f5",
+    "scaling/cli.py": "e5b95d726b13f40f0365c64f9d535ed57f895c4ea9c3ff00d0bed359d1e34339",
+    "scaling/diagnostics.py": "6265f1e818646f987e155fc0a6e9fb1e8c19453c24b3d3fe381e50c355ec2f34",
+    "config/scaling_law_v1.json": "f6f4aac3df93efdc03d98c4436748d278224060a0fef1bf518ea03af2cbf76ff",
+    "tests/test_scaling.py": "cca51cf9717dddbc3bc917a8829b654561290d82fb5b62bd3932b9ac39099d07"
+  }
+}
