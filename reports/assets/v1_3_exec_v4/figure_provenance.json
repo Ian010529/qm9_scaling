@@ -1,0 +1,16 @@
+{
+  "source_files_sha256": {
+    "studies/scaling-law-v1.3-exec-v4/analysis/run_registry.csv": "18def31ef4d004a00ef1f0f180fa17a2b47229c4cfb3a12f0b89829037fa6b63",
+    "studies/scaling-law-v1.3-exec-v4/analysis/scaling_fit.json": "7be60d8bca8be8c731f26d4ff2795eaed62979b6c2e51269f43c82ab41952127",
+    "studies/scaling-law-v1.3-exec-v4/analysis/scaling_uncertainty.json": "a5e53fbb2898a1be7c7c1af22112ec999f9eb0b7ee27156ad2c97bb0a40fa637",
+    "studies/scaling-law-v1.3-exec-v4/analysis/data_gains.csv": "30176c0602e1c2612cdcfb98cb7a8f6d61bdd6e6919aeb44aaaa90e8775996ae"
+  },
+  "script_sha256": "69ebce9040670655b342a7f6220b16d848817b4ca7c487a929e667749f19066e",
+  "training_performed": false,
+  "refitting_performed": false,
+  "figures_sha256": {
+    "fit_residuals.png": "5332374ddd49f87ac1e41a4d807a117a5151221867c3cd85a58342f939ceaefa",
+    "local_exponents.png": "193c4a48a8c0b8972631f6362a35e98b287c1255bcbbaf7b4aac17c7d693827f",
+    "scaling_curves.png": "74ef5882e6b13fa4a2193439c296faea4a18fef4ef33df9c11c3016747949c9d"
+  }
+}
